@@ -23,6 +23,7 @@ public class ThVisualizza extends Thread{
     }
     
     public void run() {
+        for (int i=0;i<ptrdati.getGeneraN();i++) {
         if (numSpaziInseriti!=ptrdati.getSpaziIns()) {
             numSpaziInseriti=ptrdati.getSpaziIns();
             System.out.println("Spazi inseriti:"+numSpaziInseriti);
@@ -41,6 +42,7 @@ public class ThVisualizza extends Thread{
         if (numPuntiLetti!=ptrdati.getLeggiPunti()) {
             numPuntiLetti=ptrdati.getLeggiPunti();
             System.out.println("Punti letti:"+numPuntiLetti);
+        }
         }
     }
 }
