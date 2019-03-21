@@ -27,17 +27,18 @@ public class EsStatistiche {
             int n=input.nextInt();
             DatiCondivisi dati=new DatiCondivisi(n);
             ThGenera thGenera=new ThGenera(dati);
-           /* ThConta thLeggiSpazi=new ThConta(' ',dati);
-            ThConta thLeggiPunti=new ThConta('.',dati);*/
             ThSpazio thLeggiSpazi=new ThSpazio(dati);
             ThPunto thLeggiPunti=new ThPunto(dati);
+            ThVisualizza thVisualizza= new ThVisualizza(dati);
             
             thGenera.start();
             thLeggiSpazi.start();
             thLeggiPunti.start();
+            thVisualizza.start();
             thGenera.join();
             thLeggiSpazi.join();
             thLeggiPunti.join();
+            thVisualizza.join();
             
             System.out.println("FINE");
             System.out.println("Spazi Inseriti:"+ dati.getSpaziIns()+ " Punti inseriti:"+dati.getPuntiIns());
