@@ -42,7 +42,7 @@ public class EsStatistiche {
             
             System.out.println("FINE");
             System.out.println("Spazi Inseriti:"+ dati.getSpaziIns()+ " Punti inseriti:"+dati.getPuntiIns());
-            System.out.println("Spazzi letti:"+dati.getLeggiSpazi()+ " Punti letti:"+dati.getLeggiPunti());
+            System.out.println("Spazi letti:"+dati.getLeggiSpazi()+ " Punti letti:"+dati.getLeggiPunti());
         } catch (InterruptedException ex) {
             Logger.getLogger(EsStatistiche.class.getName()).log(Level.SEVERE, null, ex);
         }

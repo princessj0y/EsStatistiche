@@ -56,21 +56,21 @@ public class DatiCondivisi {
     }
     
     
-    public void prendiChar(int p) {
+    public synchronized void  prendiChar(int p) {
         leggiChar=buffer[p];
     }
     
-    public void spaziInseriti()  {
+    public synchronized void spaziInseriti()  {
         spaziIns++;
     }
-    public void puntiInseriti() {
+    public synchronized void puntiInseriti() {
         puntiIns++;
     }
     
-    public void spaziLetti() {
+    public synchronized void spaziLetti() {
         leggiSpazi++;
     }
-    public void puntiLetti() {
+    public synchronized  void puntiLetti() {
         leggiPunti++;
     }
     
